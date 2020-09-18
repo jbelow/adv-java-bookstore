@@ -1,10 +1,9 @@
 package isp.lab1;
 
-import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class HardcoverBook implements Product {
+public class HardcoverBook implements Book {
 
     private String title;
     private String isbn;
@@ -22,11 +21,6 @@ public class HardcoverBook implements Product {
         this.releaseDate = releaseDate;
         this.author = author;
         this.pageCount = pageCount;
-    }
-
-    @Override
-    public String getArtist() {
-        return "";
     }
 
     @Override
@@ -52,11 +46,6 @@ public class HardcoverBook implements Product {
     @Override
     public int getPages() {
         return pageCount;
-    }
-
-    @Override
-    public Duration getPlayingTime() {
-        return null;
     }
 
     @Override
